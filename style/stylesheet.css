@@ -601,6 +601,18 @@ img{
 	font-size: 50px;
 	text-decoration: underline;
 }
+
+.btn-wts{
+	color: #4FCE5D;
+}
+.btn-inst{
+	color: #dc2743;
+}
+.btn-msng{
+	color: #006AFF;
+}
+
+
 /************************************************************/
 
 .messageme{
@@ -632,10 +644,11 @@ img{
 	font-size: 20px;
 }
 
+
 .bot-icon{
 	padding: 5px;
 	font-size: 20px;
-
+	color: #05cc47;
 }
 
 .scn-btm{
