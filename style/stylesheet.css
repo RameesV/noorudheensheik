@@ -318,16 +318,16 @@ nav ul li a:hover::after{
 .row-about{
 	background: #c0c0c0;
 	width: 100%;
-	height: 30%;
+	height: 200px;
 	margin-left: 0px;
 	margin-right: 0px;
 }
 
 @media screen and (min-device-height : 300px) 
-and (max-device-height : 1024px) {
+and (max-device-height : 1920px) {
 
 	.row-about {
-		height: "";
+		height: "200px";
 	}
 }
 
