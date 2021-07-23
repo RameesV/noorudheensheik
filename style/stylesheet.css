@@ -80,7 +80,7 @@ nav{
 }
 
 .brand span{
-	color: #f60;
+	color: rgb(253, 253, 253);
 }
 
 nav ul{
@@ -294,6 +294,7 @@ nav ul li a:hover::after{
 }
 
 .col-second{
+	font-family: 'Baloo 2', cursive;
 	text-align: center;
 	justify-content: center;
 }
@@ -352,6 +353,7 @@ nav ul li a:hover::after{
 
 
 .about-head{
+	font-family: 'Baloo 2', cursive;
 	padding-bottom: 10px;
 	font-weight: bold;
 	font-size: 50px;
