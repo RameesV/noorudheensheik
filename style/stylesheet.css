@@ -323,7 +323,7 @@ nav ul li a:hover::after{
 	margin-right: 0px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-height: 768px){
 
 	.row-about {
 		height: 20vh;
