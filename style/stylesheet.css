@@ -1,0 +1,647 @@
+
+/* Header file starts from here */
+
+
+
+/************************************************************************************/
+
+  
+body {
+	background-color: #000;
+	color: #fff;
+  }
+  
+ 
+/*************************************************************************************/
+html{
+	font-size: 10px;
+	font-family: "Roboto Cn", sans-serif;
+	scroll-behavior: smooth;	
+}
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+.a-tag{
+	text-decoration: none;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+}	
+a:hover {
+	color: #f60;
+	text-decoration: none;
+}
+
+header{
+	margin-top: 0%;
+	width: 100%;
+	height: auto;
+	background-color: #2e2828a4;
+	background-size: cover;
+  	overflow: hidden;
+	z-index: 1;
+    position: fixed;
+    top: 0;
+    z-index: 1020;
+}
+
+.container{
+	max-width: 120rem;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.menu-toggle{
+	position: fixed;
+	top: 2.5rem;
+	right: 2.5rem;
+	color: #ffffff;
+	font-size: 3rem;
+	cursor: pointer;
+	z-index: 1000;
+	display: none;
+}
+
+nav{
+	padding-top: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+}
+
+.brand{
+	font-size: 3rem;
+	font-weight: 300;
+	transform: translateX(-100rem);
+	animation: slideIn .5s forwards;
+}
+
+.brand span{
+	color: #f60;
+}
+
+nav ul{
+	display: flex;
+}
+
+nav ul li{
+	list-style: none;
+	transform: translateX(100rem);
+	animation: slideIn .5s forwards;
+}
+
+nav ul li:nth-child(1){
+	animation-delay: 0s;
+}
+
+nav ul li:nth-child(2){
+	animation-delay: .3s;
+}
+
+nav ul li:nth-child(3){
+	animation-delay: .6s;
+}
+
+nav ul li:nth-child(4){
+	animation-delay: .9s;
+}
+
+nav ul li:nth-child(5){
+	animation-delay: 1.2s;
+}
+
+nav ul li a{
+	padding: 1rem 0;
+	margin: 0 3rem;
+	position: relative;
+	letter-spacing: 2px;
+}
+
+nav ul li a:last-child{
+	margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #036;
+	left: 0;
+	transform: scaleX(0);
+	transition: all .5s;
+}
+
+nav ul li a::before{
+	top: 0;
+	transform-origin: left;
+}
+
+nav ul li a::after{
+	bottom: 0;
+	transform-origin: right;
+}
+
+.overlay{
+	background-color: transparent;
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	transition: opacity 650ms;
+	transform: scale(0);
+	opacity: 0;
+ 	display: none;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+	transform: scaleX(1);
+}
+
+@keyframes slideIn {
+	from{
+
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+
+@media screen and (max-width: 700px){
+
+	.menu-toggle{
+		display: block;
+	}
+
+	nav{
+		padding-top: 0;
+		display: none;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		height: 60vh;           	/* this is used to align the space in between nav options in mob devices */
+		text-align: center;
+	}
+
+	nav ul{
+		flex-direction: column;
+	}
+
+	nav ul li{
+		margin-top: 2rem;
+	}
+
+	nav ul li a{
+		margin: 0;
+		font-size: 2.5rem;
+	}
+
+	.brand{
+		font-size: 5rem;
+	}
+  
+  .overlay.menu-open,
+  nav.menu-open{
+	  display: flex;
+	  transform: scale(1);
+	  opacity: 1;
+  }
+  
+}
+
+/**************************************** Section 1 STartin ******************************************/
+
+.section_1{
+	height: 100%;
+	padding-top: 0em;
+}
+
+@media screen and (min-width: 768px){
+
+	.section_1 {
+		padding-top: 5em;
+	}
+}
+
+.img1{
+	width: auto;
+	height: 300px;
+	overflow:hidden;
+	border: 20px solid transparent;
+	background: #666666;
+	box-shadow: 0 0 0 20px #999999;
+}
+
+
+
+.col-img{
+	text-align: center;
+	justify-content: center;
+	display: block;
+}
+
+.subheading{
+	font-size: 20px;
+	padding-top: 20px;
+}
+
+.spn-name{
+	font-weight: bold;
+	font-size: 50px;
+	text-align: center;
+}
+
+.details{
+	font-size: 16px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+	Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin-bottom: 15px;
+}
+
+.second-row{
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 60px;
+
+	
+}
+
+.a-class{
+	position: relative;
+	display: inline-block;
+	padding: 10px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #5a84a2;
+	font-size: 15px;
+	border-radius: 40px;
+	box-shadow: -2px -2px 8px rgb(153, 153, 153);
+}
+
+.icons{
+	font-size: 20px;
+	padding: 5px;
+	color: #f60;
+}
+
+.col-second{
+	text-align: center;
+	justify-content: center;
+}
+
+
+/************************************** second Section strated ********************************************/
+
+.section_2{
+	height: 65em;
+	padding-top: 0em;
+	overflow: visible;
+}
+
+@media screen and (min-width: 768px){
+
+	.section_2 {
+		padding-top: 5em;
+	}
+}
+
+.row-about{
+	background: #c0c0c0;
+	width: 100%;
+	height: 30vh;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+@media screen and (min-width: 768px){
+
+	.row-about {
+		height: 20vh;
+	}
+}
+
+.img2{
+	width: 230px;
+	height: 230px;
+	border-radius: 0px 50px 0px 50px;
+	margin-top: 60px;
+	
+}
+
+.container-second{
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 0px;
+	
+}
+.center1 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+
+.about-head{
+	padding-bottom: 10px;
+	font-weight: bold;
+	font-size: 50px;
+}
+
+.about-text{
+	font-size: 13px;
+	margin-bottom: 25px;
+}
+
+
+
+/***************************************** section 3 starting ***********************************************/
+
+.section_3{
+	height: 100%;
+	padding-top: 0em;
+	overflow: block;
+}
+
+@media screen and (min-width: 768px){
+
+	.section_3 {
+		padding-top: 5em;
+	}
+}
+
+
+.cover-row{
+	/*background: #c0c0c0;   
+	background-image: url("/assets/bnr1.jpg");  */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 20vh;
+	margin-left: 0px;
+	margin-right: 0px;
+	position: relative;
+	margin-top: 30vh;
+	text-align: center;
+	justify-content: center;
+}
+@media screen and (min-width: 768px){
+
+	.cover-row {
+		height: 10vh;
+		margin-top: 0px;
+	}
+}
+
+.banner-text{
+	text-align: center;
+	letter-spacing: 2px;
+	word-spacing: 5px;
+	font-size: 20px;
+}
+
+.spn1{
+	color: red;
+	font-weight: bolder;
+	font-size: 50px;
+}
+
+.spn2{
+	font-weight: bolder;
+	font-size: 50px;
+	color: #4267B2;
+	font-family: lucida grande,tahoma,verdana,arial,sans-serif;
+}
+
+.col-img{
+	padding: 0px;
+	margin-top: 10px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.followers{
+	padding-right: 0px;
+}
+.likes{
+	padding-right: 0px;
+}
+.img-propic{
+	border: 10px solid transparent;
+	background: #c0c0c0;
+	width: 250px;
+	height: 250px;
+	padding: 0px;
+	z-index: 10;
+}
+
+.row-propic{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 30px;
+	
+}
+
+.fb-page{
+	box-sizing: unset;
+}
+
+.followers{
+	
+	width: 100%;
+	height: 200px;
+
+}
+
+.icons-number{
+	font-size: 40px;
+}
+
+.counter{
+	color: #f60;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+	Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.number{
+	color: #f60;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+	Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: bold;
+	font-size: 70px;
+	margin-top: -30px;
+	
+}
+
+.span-class{
+	margin-top: 15px;
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	padding: 10px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #0086e6;
+	font-size: 15px;
+	border-radius: 40px;
+	box-shadow: -2px -2px 8px rgb(153, 153, 153);
+}
+
+
+/**/
+.profile{
+	text-align: center;
+	width: 100%;
+	min-width: 180px;
+	height: 400px;
+	padding-bottom: 45%;
+	position: relative;
+	box-sizing: none;
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.profile iframe{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.container-profile{
+	margin: 2%;
+}
+
+.spn3{
+	margin-top: 20px;
+	margin-bottom: 15px;
+	text-align: center;
+	text-decoration: underline;
+	font-weight: bolder;
+	font-size: 50px;
+	color: #17a5f8;
+	font-family: lucida grande,tahoma,verdana,arial,sans-serif;
+}
+
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+/********************************** Section 4 Starting  **************************************/
+
+img{
+	max-width: 100%;
+}
+.gallery{
+	padding: 0px;
+}
+.gallery img{
+	background-color: #ffffff;
+	padding: 15px;
+	width: 100%;
+	height: auto;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	cursor: pointer;
+	display: flex;
+	float:left;
+	
+}
+
+#gallery-modal .modal-img{
+	width: 100%;
+}
+.h1-gallery{
+	padding-top: 50px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	font-weight: bolder;
+	color: #ffffff;
+	text-decoration: underline;
+	margin-bottom: 15px;
+}
+.scroll {
+	border: 5px solid #fff;
+	border-radius: 10px ;
+	margin: 0px;
+	padding:4px;
+	width: 100%;
+	height: 75vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+/********************************** Section 5 Starting  **************************************/
+
+.h1-contact{
+	padding-top: 50px;
+	font-size: 50px;
+	text-decoration: underline;
+}
+/************************************************************/
+
+.messageme{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+}
+
+.mapframe{
+	width: 100%;
+	height: 300px;
+	padding: 25px;
+}
+
+
+/***************************************************************/
+.row1{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}	
+.rwbtm{
+	border-top: 2px solid #fff;
+}
+
+.p-1{
+	font-size: 20px;
+}
+
+.bot-icon{
+	padding: 5px;
+	font-size: 20px;
+
+}
+
+.scn-btm{
+	font-size: 20px;
+	padding: 5px;
+}
+.pbtm{
+	
+	font-size: 15px;
+	letter-spacing: 2px;
+}
