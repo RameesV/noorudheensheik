@@ -37,7 +37,7 @@ header{
 	margin-top: 0%;
 	width: 100%;
 	height: auto;
-	background-color: #2e2828a4;
+	background-color: #2e2828d7;
 	background-size: cover;
   	overflow: hidden;
 	z-index: 1;
@@ -527,9 +527,7 @@ and (max-device-height : 1920px) {
 	height: 100%;
 }
 
-.container-profile{
-	margin: 2%;
-}
+
 
 .spn3{
 	margin-top: 20px;
